@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cut Crew - Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../assets/images/sidebar-logo.svg" alt="Cut Crew Logo">
+        </div>
+        <ul class="nav flex-column ps-4 pe-4">
+            <li class="nav-item">
+                <a href="#" class="nav-link active"><img src="../assets/images/dashboard-icon.svg" alt="" class="pe-3">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><img src="../assets/images/saloon-icon.svg" alt="" class="pe-3">Salon</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> <img src="../assets/images/stylist.svg" alt="" class="pe-3">Stylist</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"> <img src="../assets/images/services.svg" alt="" class="pe-3">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><img src="../assets/images/analytics.svg" alt="" class="pe-3">Analytics</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><img src="../assets/images/sidebar-settings.svg" alt="" class="pe-3">Settings</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="header">
+            <div> <h2>Dashboard</h2>
+                <h5>homepage/dashboard</h5></div>
+           
+             <div class="d-flex justify-content-end bg-white p-2 align-items-center rounded-5">
+            <!-- Search Bar -->
+            <div class="search-bar me-3">
+                <button type="button"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="dropdown me-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/images/aus.png" alt="English Flag"> English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#"><img src="path/to/english-flag.png" alt="English Flag"> English</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="path/to/spanish-flag.png" alt="Spanish Flag"> Spanish</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="path/to/french-flag.png" alt="French Flag"> French</a></li>
+                </ul>
+            </div>
+
+            <!-- Notification Bell -->
+            <div class="me-3 position-relative">
+                <i class="fas fa-bell fa-lg"></i>
+                <span class="notification-badge">1</span>
+            </div>
+
+            <!-- User Profile -->
+            <div class="user-profile">
+                <img src="../assets/images/profile-menu.png" alt="User Avatar">
+            </div>
+        </div>
+        </div>
+
+        <!-- Stats Cards -->
+         <div class="dashboard-container">
+        <div class="dashboard-header">
+        </div>
+        <div class=" dashboard-cards d-flex justify-content-between gap-4 flex-row">
+            <div class="d-flex justify-content-center gap-4">
+                <div class=" d-flex ">
+                    <div class="stats-card total-shop d-flex justify-content-between align-items-end">
+                        <div class="d-flex flex-column justify-content-between gap-4">
+                            <h5>Total Shop</h5>
+                            <i class="fas fa-store stats-icon pb-3"></i>
+                        </div>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="stats-card total-stylist d-flex justify-content-between align-items-end">
+                        <div  class="d-flex flex-column justify-content-between gap-4">
+                            <h5>Total Stylist</h5>
+                            <i class="fas fa-user-friends stats-icon pb-3"></i>
+                        </div>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="stats-card total-services d-flex justify-content-between align-items-end">
+                        
+                        <div  class="d-flex flex-column justify-content-between gap-4">
+                            <h5>Total Services</h5>
+                            <i class="fas fa-scissors stats-icon pb-3"></i>
+                        </div>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="stats-card total-appointments d-flex justify-content-between align-items-end">
+                        
+                        <div  class="d-flex flex-column justify-content-between gap-4">
+                            <h5>Total Appointments</h5>
+                            <i class="fas fa-bolt stats-icon pb-3"></i>
+                        </div>
+                        <p>50</p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="stats-card total-users d-flex justify-content-between align-items-end">
+                        <div  class="d-flex flex-column justify-content-between gap-4">
+                            <h5>Total Users</h5>
+                            <i class="fas fa-users stats-icon pb-3"></i>
+                        </div>
+                        <p>50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div class="graph d-flex gap-4 flex-column">
+        <!-- Charts and Tables -->
+        <div class="row">
+            <div class="col-md-7 col-lg-7">
+                <!-- Overall Appointments Chart -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Overall Appointments</h5>
+                        <!-- Add your chart here -->
+                        <div class="chart-container">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-5">
+                <!-- Overall Appointments Pie Chart -->
+                <div class="card">
+                    <div class="card-body text-left">
+                        <h5 class="chart-title text-left d-flex justify-content-start">Overall Appointments</h5>
+                        <div class="chart-container">
+                           
+                            <div class="d-flex">
+                            <canvas id="donutChart"></canvas>
+                            <div class="legend-container d-flex flex-column  row">
+                                <div class="legend-item align-items-center col-md-4 ">
+                                    <div class=" d-flex flex-row justify-content-between">
+                                        <span style="background-color: #ffce56;"></span>
+                                        <p>Hair Cut</p>
+                                        <p>2345</p>
+                                    </div>
+                                </div>
+                                <div class="legend-item align-items-center col-md-4 ">
+                                    <div class=" d-flex flex-row justify-content-between">
+                                        <span style="background-color: #ffce56;"></span>
+                                        <p>Hair Cut</p>
+                                        <p>2345</p>
+                                    </div>
+                                </div>
+                                <div class="legend-item align-items-center col-md-4 ">
+                                    <div class=" d-flex flex-row justify-content-between">
+                                        <span style="background-color: #ffce56;"></span>
+                                        <p>Hair Cut</p>
+                                        <p>2345</p>
+                                    </div>
+                                </div>
+                                <div class="legend-item align-items-center col-md-4 ">
+                                    <div class=" d-flex flex-row justify-content-between">
+                                        <span style="background-color: #ffce56;"></span>
+                                        <p>Hair Cut</p>
+                                        <p>2345</p>
+                                    </div>
+                                </div>
+                                <div class="legend-item align-items-center col-md-4 ">
+                                    <div class=" d-flex flex-row justify-content-between">
+                                        <span style="background-color: #ffce56;"></span>
+                                        <p>Hair Cut</p>
+                                        <p>2345</p>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Salon and Top Stylist Tables -->
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <!-- Top Salon Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Top Salon</h5>
+                        <div class="table-container">
+                            <table class="salon-table">
+                                <thead>
+                                    <tr>
+                                        <th>Salon</th>
+                                        <th>Appointment</th>
+                                        <th>Services</th>
+                                        <th>Ratings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <!-- Top Salon Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Top Stylist</h5>
+                        <div class="table-container">
+                            <table class="salon-table">
+                                <thead>
+                                    <tr>
+                                        <th>Salon</th>
+                                        <th>Appointment</th>
+                                        <th>Services</th>
+                                        <th>Ratings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="../assets/images/table-1-data.png" >
+                                            Worldwide Salon
+                                        </td>
+                                        <td>23456</td>
+                                        <td>8</td>
+                                        <td class="rating">
+                                            <i class="fas fa-star"></i>
+                                            4.5
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <!-- Top Salon Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Services</h5>
+                        <div class="service-list ">
+                            <!-- Service Item 1 -->
+                            <div class="service-item row d-flex align-items-center mt-4">
+                                <div class="service-avatar col-md-2">
+                                    <img src="../assets/images/table-1-data.png" >
+                                </div>
+                                <div class="service-name col-md-3">Haircut</div>
+                             <i class="fas fa-chevron-right service-arrow col-md-2"></i>
+                            </div>
+                            <div class="service-item row d-flex align-items-center mt-4">
+                                <div class="service-avatar col-md-2">
+                                    <img src="../assets/images/table-1-data.png" >
+                                </div>
+                                <div class="service-name col-md-3">Haircut</div>
+                                <i class="fas fa-chevron-right service-arrow col-md-2"></i>
+                            </div>
+                            <div class="service-item row d-flex align-items-center mt-4">
+                                <div class="service-avatar col-md-2">
+                                    <img src="../assets/images/table-1-data.png" >
+                                </div>
+                                <div class="service-name col-md-3">Haircut</div>
+                                <i class="fas fa-chevron-right service-arrow col-md-2"></i>
+                            </div>
+                
+                            <!-- Service Item 2 -->
+                            <div class="service-item row d-flex align-items-center mt-4">
+                                <div class="service-avatar col-md-2">
+                                    <img src="../assets/images/table-1-data.png" >
+                                </div>
+                                <div class="service-name col-md-3">Facial</div>
+                                <i class="fas fa-chevron-right service-arrow col-md-2"></i>
+                            </div>
+                
+                            <!-- Service Item 3 -->
+                            <div class="service-item row d-flex align-items-center mt-4">
+                                <div class="service-avatar col-md-2">
+                                    <img src="../assets/images/table-1-data.png" >
+                                </div>
+                                <div class="service-name col-md-3">Hair Coloring</div>
+                                <i class="fas fa-chevron-right service-arrow col-md-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!-- Booking List and Appointment by Countries -->
+        <div class="row">
+            <div class="col-md-8 col-lg-8">
+                <!-- Booking List Table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Booking List</h5>
+                        <div class="booking-container">
+                            <table class="booking-table">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>
+                                            Booking Id
+                                            <span class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                <i class="fas fa-sort-down"></i>
+                                            </span>
+                                        </th>
+                                        <th>
+                                            Customer Name
+                                            <span class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                <i class="fas fa-sort-down"></i>
+                                            </span>
+                                        </th>
+                                        <th>Mobile No</th>
+                                        <th>Stylist/Shop</th>
+                                        <th>Service</th>
+                                        <th>Location</th>
+                                        <th>
+                                            Status
+                                            <span class="dropdown-toggle" data-bs-toggle="dropdown">
+                                                <i class="fas fa-sort-down"></i>
+                                            </span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>#T2341</td>
+                                        <td>Mr.Walker</td>
+                                        <td>+81234 456 675</td>
+                                        <td>Beauty Salon</td>
+                                        <td>Hair cut</td>
+                                        <td>London</td>
+                                        <td><span class="status-badge">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>#T2341</td>
+                                        <td>Mr.Walker</td>
+                                        <td>+81234 456 675</td>
+                                        <td>Beauty Salon</td>
+                                        <td>Hair cut</td>
+                                        <td>London</td>
+                                        <td><span class="status-badge">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>#T2341</td>
+                                        <td>Mr.Walker</td>
+                                        <td>+81234 456 675</td>
+                                        <td>Beauty Salon</td>
+                                        <td>Hair cut</td>
+                                        <td>London</td>
+                                        <td><span class="status-badge">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>#T2341</td>
+                                        <td>Mr.Walker</td>
+                                        <td>+81234 456 675</td>
+                                        <td>Beauty Salon</td>
+                                        <td>Hair cut</td>
+                                        <td>London</td>
+                                        <td><span class="status-badge">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>#T2341</td>
+                                        <td>Mr.Walker</td>
+                                        <td>+81234 456 675</td>
+                                        <td>Beauty Salon</td>
+                                        <td>Hair cut</td>
+                                        <td>London</td>
+                                        <td><span class="status-badge">Completed</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <!-- Appointment by Countries Chart -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Appointment by Countries</h5>
+                        <div class="appointment-container">
+                            <div class="country-list">
+                                <!-- Country Item 1 -->
+                                <div class="country-item">
+                                    <div class="country-flag">
+                                        <img src="../assets/images/aus.png" alt="United States">
+                                    </div>
+                                    <div class="country-name">
+                                        <span class="appointment-count">30k</span><br>
+                                        <span class="country-text">United States</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill" style="width: 25.8%;"></div>
+                                    </div>
+                                    <div class="percentage percentage-up">
+                                        <i class="fas fa-arrow-up"></i> 25.8%
+                                    </div>
+                                </div>
+                    
+                                <!-- Country Item 2 -->
+                                <div class="country-item">
+                                    <div class="country-flag">
+                                        <img src="../assets/images/aus.png" alt="United States">
+                                    </div>
+                                    <div class="country-name">
+                                        <span class="appointment-count">30k</span><br>
+                                        <span class="country-text">United States</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill" style="width: 25.8%;"></div>
+                                    </div>
+                                    <div class="percentage percentage-up">
+                                        <i class="fas fa-arrow-up"></i> 25.8%
+                                    </div>
+                                </div>
+                    
+                                <!-- Country Item 3 -->
+                                <div class="country-item">
+                                    <div class="country-flag">
+                                        <img src="../assets/images/aus.png" alt="United States">
+                                    </div>
+                                    <div class="country-name">
+                                        <span class="appointment-count">26k</span><br>
+                                        <span class="country-text">Brazil</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill" style="width: 16.2%;"></div>
+                                    </div>
+                                    <div class="percentage percentage-down">
+                                        <i class="fas fa-arrow-down"></i> 16.2%
+                                    </div>
+                                </div>
+                    
+                                <!-- Country Item 4 -->
+                                <div class="country-item">
+                                    <div class="country-flag">
+                                        <img src="../assets/images/aus.png" alt="United States">
+                                    </div>
+                                    <div class="country-name">
+                                        <span class="appointment-count">22k</span><br>
+                                        <span class="country-text">India</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill" style="width: 12.3%;"></div>
+                                    </div>
+                                    <div class="percentage percentage-up">
+                                        <i class="fas fa-arrow-up"></i> 12.3%
+                                    </div>
+                                </div>
+                    
+                                <!-- Country Item 5 -->
+                                <div class="country-item">
+                                    <div class="country-flag">
+                                        <img src="../assets/images/aus.png" alt="United States">
+                                    </div>
+                                    <div class="country-name">
+                                        <span class="appointment-count">17k</span><br>
+                                        <span class="country-text">Australia</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-bar-fill" style="width: 11.9%;"></div>
+                                    </div>
+                                    <div class="percentage percentage-down">
+                                        <i class="fas fa-arrow-down"></i> 11.9%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
